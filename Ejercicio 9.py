@@ -2,7 +2,7 @@ import networkx as nx
 import matplotlib.pyplot as plt
 
 def crear_red_comunicacion():
-    # creo el grafico dirijido con ejem, asistente dilo por mi (di-graph) para las conexiones con flechas
+    # creo el grafico dirigido (di-graph) para las conexiones con flechas
     G = nx.DiGraph()
     nodos = range(1, 9)
     G.add_nodes_from(nodos)
@@ -18,6 +18,10 @@ def crear_red_comunicacion():
     # preparo un layout circular para que se vea bonito y ordenado (cada nodo en su lugar)
     pos = nx.circular_layout(G)
     
+    # ACA ESTABA EL ERROR AAAAAAA
+    plt.figure(figsize=(6, 6))
+    nx.draw_networkx_nodes(G, pos, node_size=700, node_color='lightblue')
+    nx.draw_networkx_labels(G, pos)
     
     # se dibujan las flechas curvas para que no se coman unas con las otras, con un poco de espacio entre ellas (rad=0.1)
     nx.draw_networkx_edges(
@@ -29,3 +33,5 @@ def crear_red_comunicacion():
     plt.axis('off')
     plt.show()
 
+if __name__ == "__main__":
+    crear_red_comunicacion()
