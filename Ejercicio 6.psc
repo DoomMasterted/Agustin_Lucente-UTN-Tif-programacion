@@ -1,7 +1,7 @@
 Algoritmo PiramideEntera
     Definir altura, fila, columna, espacio Como Entero
     
-    Escribir "Ingrese la altura deseada para la pir�mide:"
+    Escribir "Ingrese la altura deseada para la piramide:"
     Leer altura
     
     // recorro cada escalon de la piramide
