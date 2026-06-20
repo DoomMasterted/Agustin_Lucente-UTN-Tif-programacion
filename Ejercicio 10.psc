@@ -5,7 +5,7 @@ Algoritmo CalcularPromedio
     suma <- 0
     contador <- 0
     
-    Escribir "Ingrese hasta 10 n�meros para el promedio (ingrese un negativo para detenerse):"
+    Escribir "Ingrese hasta 10 numeros para el promedio (ingrese un negativo para detenerse):"
     
     Repetir
         Leer valor
