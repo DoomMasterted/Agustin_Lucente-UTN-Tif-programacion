@@ -1,15 +1,19 @@
 Algoritmo CalcularPromedio
+	//Definimos las variables
     Definir valor, suma Como Real
     Definir contador Como Entero
-    
+
+	//le asignamos valor
     suma <- 0
     contador <- 0
-    
+
+	//Solicitamos los datos al usuario
     Escribir "Ingrese hasta 10 numeros para el promedio (ingrese un negativo para detenerse):"
     
     Repetir
         Leer valor
-        
+
+		//Ponemos la condicion
         Si valor >= 0 Entonces
             suma <- suma + valor
             contador <- contador + 1
